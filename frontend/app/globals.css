@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Command Center Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07100F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #112d2a;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #14b8a6;
+}
+
+/* Command Center Ambient Visual Utilities */
+.bg-command-grid {
+  background-image: radial-gradient(rgba(20, 184, 166, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.glow-teal {
+  box-shadow: 0 0 20px -3px rgba(20, 184, 166, 0.25);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px -3px rgba(6, 182, 212, 0.25);
+}
+
+.glow-rose {
+  box-shadow: 0 0 24px -2px rgba(244, 63, 94, 0.35);
+}
+
+.glow-amber {
+  box-shadow: 0 0 20px -3px rgba(245, 158, 11, 0.3);
+}
+
+/* Leaflet dark popup reset */
+.leaflet-popup-content-wrapper {
+  background: #0b1e1c !important;
+  color: #e2e8f0 !important;
+  border: 1px solid rgba(20, 184, 166, 0.25) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.8), 0 0 15px rgba(20, 184, 166, 0.15) !important;
+  border-radius: 12px !important;
+}
+
+.leaflet-popup-tip {
+  background: #0b1e1c !important;
+  border: 1px solid rgba(20, 184, 166, 0.25) !important;
+}
+
+/* Futuristic dark GIS map tiles - Crisp vector contrast without watermarks */
+.leaflet-container {
+  background: #07100F !important;
+}
+
+.leaflet-container .leaflet-tile {
+  filter: brightness(0.6) invert(1) contrast(2.8) hue-rotate(180deg) saturate(0.3) !important;
+}
+
+.leaflet-container {
+  background-color: #07100F !important;
+}
+
