@@ -23,7 +23,7 @@ The eventual full system will:
 
 ---
 
-## 2. Current Development Phase
+## 2. Phase
 
 * **Phase 1: Project Foundation (Current)**
   - Establish a clean, scalable, decoupled monorepo.
